@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Here is the list of Student and Teacher</h1>
+<table>
+  <tr>
+    <h2>Student List</h2>
+  </tr>
+  {% for i in Student %}
+  <tr>
+    {{i}}
+    <br>
+  </tr>
+  {% endfor %}
+</table>
+<table>
+  <tr>
+    <h2>Teacher List</h2>
+  </tr>
+  {% for i in Teacher %}
+  <tr>
+    {{i}}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

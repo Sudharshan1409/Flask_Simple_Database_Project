@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Enter the Student Details</h1>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <div class="form-group">
+    <table>
+      <tr>
+        <td>{{form.usn.label}}</td>
+        <td>{{form.usn()}}</td>
+      </tr>
+      <tr>
+        <td>{{form.name.label}}</td>
+        <td>{{form.name()}}</td>
+      </tr>
+      <tr>
+        <td>{{form.age.label}}</td>
+        <td>{{form.age()}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{form.submit()}}</td>
+      </tr>
+    </table>
+
+  </div>
+</form>
+{% endblock %}

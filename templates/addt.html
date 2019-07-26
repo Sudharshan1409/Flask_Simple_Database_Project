@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Enter the Teacher Details</h1>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <div class="form-group">
+    <table>
+      <tr>
+        <td>{{form.ssn.label}}</td>
+        <td>{{form.ssn()}}</td>
+      </tr>
+      <tr>
+        <td>{{form.name.label}}</td>
+        <td>{{form.name()}}</td>
+      </tr>
+      <tr>
+        <td>{{form.exp.label}}</td>
+        <td>{{form.exp()}}</td>
+      </tr>
+      <tr>
+        <td>{{form.salary.label}}</td>
+        <td>{{form.salary()}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{form.submit()}}</td>
+      </tr>
+    </table>
+
+  </div>
+</form>
+{% endblock %}

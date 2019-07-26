@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Enter the Student USN</h1>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <div class="form-group">
+    <table>
+      <tr>
+        <td>{{form.usn.label}}</td>
+        <td>{{form.usn()}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{form.submit()}}</td>
+      </tr>
+    </table>
+
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Enter the Teacher SSN</h1>
+<form method="POST">
+  {{form.hidden_tag()}}
+  <div class="form-group">
+    <table>
+      <tr>
+        <td>{{form.ssn.label}}</td>
+        <td>{{form.ssn()}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>{{form.submit()}}</td>
+      </tr>
+    </table>
+
+  </div>
+</form>
+{% endblock %}
